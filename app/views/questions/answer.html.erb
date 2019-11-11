@@ -1,0 +1,25 @@
+<h1 class="heading">Questions#answer</h1>
+
+<!-- <form action="/answer" method="get">
+  <input type="text" name="question" placeholder="What is your question?">
+  <input type="submit" value="Ask!">
+</form> -->
+
+<div class="banner">
+  <%= @message %>
+  <p> - Your Message</p>
+</div>
+
+<div class="banner">
+  <% if @message == "I am going to work" %>
+    <p>Great!</p>
+  <% elsif @message.include?('?')%>
+    <p>Silly question, get dressed and go to work!.</p>
+  <% else %>
+    <p>I don't care, get dressed and go to work!</p>
+  <% end %>
+
+  <p> - Your Coach </p>
+</div>
+<%= link_to "Back", ask_path %>
+
