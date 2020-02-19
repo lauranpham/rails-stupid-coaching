@@ -1,4 +1,4 @@
-<h1 class="heading">Questions#answer</h1>
+<h1 class="heading">Coach Response</h1>
 
 <!-- <form action="/answer" method="get">
   <input type="text" name="question" placeholder="What is your question?">
@@ -6,8 +6,8 @@
 </form> -->
 
 <div class="banner">
-  <%= @message %>
-  <p> - Your Message</p>
+  <p><%= @message %></p>
+  <p class="user"> - Your Message</p>
 </div>
 
 <div class="banner">
@@ -19,7 +19,7 @@
     <p>I don't care, get dressed and go to work!</p>
   <% end %>
 
-  <p> - Your Coach </p>
+  <p class="user"> - Your Coach </p>
 </div>
 <%= link_to "Back", ask_path %>
 
